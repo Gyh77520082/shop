@@ -1,6 +1,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+@import "~@fortawesome/fontawesome-free/css/all.css";
 // Variables
 @import 'variables';
 
@@ -19,6 +20,9 @@ body {
 
 //products
 @import 'products';
+
+//cart
+@import 'cart';
 
 //footer
 @import 'footer';

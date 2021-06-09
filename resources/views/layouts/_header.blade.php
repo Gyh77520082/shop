@@ -25,6 +25,9 @@
                     <!-- 用单独的元素嵌套.nav-item 和 .nav-link， -->
                     <!-- auth 和 guest 指令可以用来快速确定当前用户是否已通过身份验证，是否为访客： -->
                     @auth
+                        <li class="nav-item">
+                            <a class="nav-link mt-1" href="{{ route('cart.index') }}"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
                         <li class="nav-item dropdown">
                             <!-- 添加 data-toggle="dropdown" 在A链接或按钮上，以启用下拉菜单组件。 -->
                             <!-- aria-haspopup :true表示点击的时候会出现菜单或是浮动元素； false表示没有pop-up效果。 -->
