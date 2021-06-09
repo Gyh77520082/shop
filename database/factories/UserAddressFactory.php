@@ -16,7 +16,8 @@ class UserAddressFactory extends Factory
 
     /**
      * Define the model's default state.
-     *
+     * php artisan tinker
+     * App\Models\UserAddress::factory()->count(3)->create(['user_id' => 1])
      * @return array
      */
     public function definition()

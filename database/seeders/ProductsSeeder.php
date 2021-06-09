@@ -10,7 +10,7 @@ class ProductsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
+     * php artisan make:seeder ProductsSeeder
      * @return void
      */
     public function run()
