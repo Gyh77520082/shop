@@ -2,6 +2,9 @@
 
 return [
 
+
+
+    'order_ttl' => 1800,
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -230,6 +233,11 @@ return [
        
         //Package aliases
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+
+
+
+
+
     ],
 
 ];
