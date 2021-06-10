@@ -11,6 +11,7 @@ class ProductsSeeder extends Seeder
     /**
      * Run the database seeds.
      * php artisan make:seeder ProductsSeeder
+     * php artisan db:seed --class=ProductsSeeder
      * @return void
      */
     public function run()
