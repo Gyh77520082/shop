@@ -39,6 +39,7 @@
                             <div class="dropdown-menu" aria-lablledby="NavDropDown">
                                 <a class="dropdown-item" href="{{ route('products.favoriteslist') }}">我的收藏</a>
                                 <a class="dropdown-item" href="{{ route('user_addresses.index') }}">收货地址</a>
+                                <a class="dropdown-item" href="{{ route('orders.index') }}">我的订单</a>
                                 <a class="dropdown-item" id="logout" href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();">退出登陆</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="post" style="display:none">
                                     {{ csrf_field() }}
