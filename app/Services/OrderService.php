@@ -16,7 +16,7 @@ class OrderService{
     public function store(User $user, UserAddress $address, $remark, $items){
         // 开启一个数据库事务
         $order =\DB::transaction(function () use ($user, $address,$remark, $items) {
-            $address=UserAddress::find($request->input('address_id'));
+            
             // 更新此地址的最后使用时间
             $address->update(['last_used_at' => Carbon::now()]);
 
@@ -36,7 +36,7 @@ class OrderService{
             // 写入数据库
             $order->save();
             $totalAmount = 0;
-            $items = $request->input('items');
+            
             // 遍历用户提交的 SKU
             foreach ($items as $data) {
                 $sku  = ProductSku::find($data['sku_id']);
