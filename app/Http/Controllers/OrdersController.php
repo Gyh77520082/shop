@@ -90,6 +90,13 @@ class OrdersController extends Controller
 
     }
 
+    //订单列表页详情 
+    public function show(Order $order, Request $request)
+    {
+        $this->authorize('own', $order);
+        return view('orders.show', ['order' => $order->load(['items.productSku', 'items.product'])]);
+    }
+
     
 
 }
