@@ -30,4 +30,6 @@ Route::group([
 
     //优惠券
     $router->get('coupon_codes', 'CouponCodesController@index');
+    $router->post('coupon_codes', 'CouponCodesController@store');
+    $router->get('coupon_codes/create', 'CouponCodesController@create');
 });
