@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Admin\Controllers;
-
+use Encore\Admin\Layout\Content;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Models\Order;
 use Encore\Admin\Controllers\AdminController;
