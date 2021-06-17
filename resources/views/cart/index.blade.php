@@ -169,7 +169,7 @@
                             amount: $input.val(),
                         });
                     });  
-                    axios.post('{{ route('orders.store') }}', request)
+                    axios.post('{{ route('orders.store') }}', req)
                     .then(function (response) {
                         swal('订单提交成功', '', 'success')
                         .then(() => {
@@ -186,10 +186,11 @@
                             });
                             html += '</div>';
                             swal({content: $(html)[0], icon: 'error'})
+                        } else if (error.response.status === 403) { // 这里判断状态 403
+                            swal(error.response.data.msg, '', 'error');
                         } else {
-                            // 其他情况应该是系统挂了
                             swal('系统错误', '', 'error');
-                        }
+                        }  
                     });    
                 });
 
