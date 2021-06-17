@@ -2,15 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\Order;
+use App\Models\OrderItem;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class OrdersSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         // 获取 Faker 实例
